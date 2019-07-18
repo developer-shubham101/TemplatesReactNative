@@ -24,7 +24,7 @@ export default class HomeScreen extends React.Component {
                 { id: 5, description: "ShopProduct.", date: "2019-03-25 08:13:00", color: "#000080", completed: 0, screenId: "ShopProduct" },
                 { id: 6, description: "Craigslist.", date: "2019-03-25 10:22:00", color: "#FF4500", completed: 1, screenId: "Craigslist" },
                 { id: 7, description: "TodoList.", date: "2019-03-25 13:33:00", color: "#FF0000", completed: 0, screenId: "TodoList" },
-                { id: 8, description: "Maecenas nec odio et ante tincidunt tempus. Donec vitae .", date: "2019-03-25 11:56:00", color: "#EE82EE", completed: 0, screenId: "asdasd" },
+                { id: 8, description: "PlayGroundScreen", date: "2019-03-25 11:56:00", color: "#EE82EE", completed: 0, screenId: "PlayGroundScreen" },
                 { id: 9, description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.", date: "2019-03-25 15:00:00", color: "#6A5ACD", completed: 0, screenId: "asdasd" },
                 { id: 10, description: " Aenean imperdiet. Etiam ultricies nisi vel augues aasde.", date: "2019-03-25 12:27:00", color: "#DDA0DD", completed: 0, screenId: "asdasd" },
             ]

@@ -14,7 +14,7 @@ import {
     KeyboardAvoidingView
 } from 'react-native';
 const { width, height } = Dimensions.get('window');
-export default class ChatScreen extends Component {
+export default class PlayGroundScreen extends Component {
 
     constructor(props) {
         super(props);
@@ -99,7 +99,7 @@ export default class ChatScreen extends Component {
                         renderItem={this.renderItem} />
                     <View style={styles.input}>
                         <TextInput
-                            style={{ flex: 1 }}
+                            style={styles.messageBox}
                             value={this.state.msg}
                             placeholderTextColor="#696969"
                             onChangeText={msg => this.setState({ msg })}
@@ -107,6 +107,11 @@ export default class ChatScreen extends Component {
                             onSubmitEditing={() => this.send()}
                             placeholder="Type a message"
                             returnKeyType="send" />
+                        <Button 
+                            title="Send"
+                            color="#841584" 
+                            style={styles.sendBtn}
+                        />
                     </View>
                 </KeyboardAvoidingView>
             </View>
@@ -152,19 +157,20 @@ const styles = StyleSheet.create({
     input: {
         flexDirection: 'row',
         alignSelf: 'flex-end',
-        padding: 10,
+        
         height: 40,
         width: width - 20,
         backgroundColor: '#fff',
         margin: 10,
-        shadowColor: '#3d3d3d',
-        shadowRadius: 2,
-        shadowOpacity: 0.5,
-        shadowOffset: {
-            height: 1,
-        },
-        borderColor: '#696969',
+        borderRadius: 3,
+        borderColor: '#ddd',
         borderWidth: 1,
+    }, 
+    sendBtn: {
+        flex: 1
+    },
+    messageBox: {
+        flex: 3
     },
     eachMsg: {
         flexDirection: 'row',

@@ -15,6 +15,9 @@ import FacebookPost from './src/FacebookPost'
 import ShopProduct from './src/ShopProduct'
 import Craigslist from './src/Craigslist'
 import TodoList from './src/TodoList'
+import PlayGroundScreen from './src/PlayGroundScreen'
+
+
 import { createStackNavigator, createAppContainer, createDrawerNavigator } from 'react-navigation';
 const AppNavigator = createStackNavigator({
     Home: {
@@ -41,9 +44,12 @@ const AppNavigator = createStackNavigator({
     TodoList: {
         screen: TodoList,
     },
+    PlayGroundScreen: {
+        screen: PlayGroundScreen,
+    },
     
 }, {
-        initialRouteName: 'Home',
+        initialRouteName: 'PlayGroundScreen',
     });
 
 
